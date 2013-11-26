@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "tv4": "latest",
+    "eyes": "latest",
+    "filewalker": "latest",
+    "underscore": "latest"
+  }
+}
