@@ -1,0 +1,22 @@
+{
+	"request": {
+	    "path": "/user",
+	    "method": "GET",
+	    "querystring": [
+	      {
+	      	"key": "count",
+	      	"value": "2" 
+	      }
+	    ]
+	},
+	"response": [
+		{
+			"id": "1",
+			"name": "Juan"
+		},
+		{
+			"id": "2",
+			"name": "Samuel"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+    "title": "Rest API call descriptor.",
+	"type": "object",
+    "properties": {
+    	"request": {
+    		"type": "object",
+    		"properties": {
+    			"path": {
+    				"type": "string"
+    			},
+    			"method": {
+    				"enum": ["GET", "HEAD", "POST", "PUT", "DELETE", "OPTIONS", "TRACE"]
+    			},
+    			"querystring": {
+    				"type": "array",
+    				"items": {
+                        "type": "object",
+                        "properties": {
+                            "key": {
+                                "type": "string"
+                            },
+                            "value": {
+                                "type": "string"
+                            }
+                        }
+   					}
+   				},
+    			"body": {
+    				"type": "object"
+   				}
+    		}
+    	},
+    	"response": {
+            "oneOf": [
+                {"type": "object"},
+                {"type": "array"}
+            ]
+    	}
+    },
+    "requred": ["request", "response"]
+}
